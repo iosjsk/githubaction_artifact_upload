@@ -20,6 +20,6 @@ jobs:
        uses: actions/upload-artifact@v3
        with:
         name: artifactory
-        path: warbuild
+        path: mahaLogin-1.0.war
       
     
