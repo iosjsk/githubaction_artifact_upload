@@ -1,0 +1,17 @@
+name: uploading
+on: 
+  push:
+    branches:
+       - master
+jobs:
+  Deploying:
+    runs-on: ubutu-latest
+    steps:
+     - name: checking out
+       uses: actions/checkout@v3
+     - name: building
+       run: mvn clean install
+     - name: Upload Artifacts
+       uses: actions/upload-artifact@v3
+      
+    
