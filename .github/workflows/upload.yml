@@ -5,7 +5,7 @@ on:
        - master
 jobs:
   Deploying:
-    runs-on: ubutu-latest
+    runs-on: ubuntu-latest
     steps:
      - name: checking out
        uses: actions/checkout@v3
@@ -13,5 +13,8 @@ jobs:
        run: mvn clean install
      - name: Upload Artifacts
        uses: actions/upload-artifact@v3
+       with:
+        name: artifactory
+        path: warbuild
       
     
