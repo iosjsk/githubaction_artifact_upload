@@ -9,6 +9,12 @@ jobs:
     steps:
      - name: checking out
        uses: actions/checkout@v3
+    steps:
+     - name: installing JAVA
+       uses: actions/setup-java@v3
+       with:
+         distribution: 'temurin' # See 'Supported distributions' for available options
+         java-version: '17'
      - name: building
        run: mvn clean install
      - name: Upload Artifacts
