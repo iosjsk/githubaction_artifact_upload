@@ -102,6 +102,7 @@
                 <groupId>org.eclipse.jetty</groupId>
                 <artifactId>jetty-maven-plugin</artifactId>
                 <version>9.2.11.v20150529</version>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
@@ -113,7 +114,6 @@
                         <contextPath>/</contextPath>
                     </webApp>
                 </configuration>
-            </plugin>
         </plugins>
     </build>
 </project>
